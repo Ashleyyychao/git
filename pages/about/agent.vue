@@ -1,16 +1,14 @@
 <template>
-  <div class="container d-flex flex-column" style="padding: 100px">
-    <div class="d-flex" style="margin: auto; padding-bottom: 100px">
-      <div style="padding-right: 100px">
+  <div class="container d-flex flex-column" style="padding: 100px;max-width:1170px">
+    <div class="d-flex"  :class="`${windowWidth < 900 ? 'flex-column' : ''}`" style="margin: auto; padding-bottom: 100px;width:100%">
+      <div  :style="`${windowWidth < 900 ? '' : 'padding-right: 100px;width:40%'}`" >
         <div>
           <v-img
-            width="282px"
-            height="191px"
             :src="require('~/assets/img/agent1496387087979396.jpg')"
           ></v-img>
         </div>
         <div>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap" :style="`${windowWidth < 900 ? 'padding:24px 0px' : ''}`" >
             <div class="pa-1">
               <v-img
                 width="30px"
@@ -30,7 +28,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div :style="`${windowWidth < 900 ? '' : 'width:60%'}`" >
         <div class="font-weight-bold" style="color: #333333; font-size: 18px">
           正裕化工合作超過三十年，從產品代理到生產再進化為合作開發，至今已是最緊密的研發與銷售夥伴。
         </div>
@@ -55,17 +53,15 @@
       </div>
     </div>
     <v-divider></v-divider>
-    <div class="d-flex" style="margin: auto; padding: 100px 0px">
-      <div style="padding-right: 100px">
+    <div class="d-flex" :class="`${windowWidth < 900 ? 'flex-column' : ''}`" style="margin: auto; padding: 100px 0px;width:100%">
+      <div :style="`${windowWidth < 900 ? '' : 'padding-right: 100px;width:40%'}`">
         <div>
           <v-img
-            width="282px"
-            height="191px"
             :src="require('~/assets/img/agent1496387169342396.jpg')"
           ></v-img>
         </div>
         <div>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap" :style="`${windowWidth < 900 ? 'padding:24px 0px' : ''}`" >
             <div class="pa-1">
               <v-img
                 width="30px"
@@ -85,7 +81,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div :style="`${windowWidth < 900 ? '' : 'width:60%'}`">
         <div class="font-weight-bold" style="color: #333333; font-size: 18px">
           日本歷史悠久的鑄造樹脂生產商，正裕化工與其合作超過二十年。
         </div>
@@ -104,17 +100,15 @@
       </div>
     </div>
     <v-divider></v-divider>
-    <div class="d-flex" style="margin: auto; padding: 100px 0px">
-      <div style="padding-right: 100px">
+    <div class="d-flex" :class="`${windowWidth < 900 ? 'flex-column' : ''}`" style="margin: auto; padding: 100px 0px;width:100%">
+      <div :style="`${windowWidth < 900 ? '' : 'padding-right: 100px;width:40%'}`">
         <div>
           <v-img
-            width="282px"
-            height="191px"
-            :src="require('~/assets/img/agent1496387087979396.jpg')"
+            :src="require('~/assets/img/agent1515138441277402.jpg')"
           ></v-img>
         </div>
         <div>
-          <div class="d-flex">
+          <div class="d-flex flex-wrap" :style="`${windowWidth < 900 ? 'padding:24px 0px' : ''}`" >
             <div class="pa-1">
               <v-img
                 width="30px"
@@ -134,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div :style="`${windowWidth < 900 ? '' : 'width:60%'}`">
         <div class="font-weight-bold" style="color: #333333; font-size: 18px">
           生產各式高級石墨，可供焊材業與高科技產業使用，合作超過三十年。
         </div>
@@ -155,3 +149,11 @@
     <v-divider></v-divider>
   </div>
 </template>
+<script>
+import uiFunctions from "~/mixins/uiFunctions";
+
+export default {
+    mixins: [uiFunctions],
+
+}
+</script>

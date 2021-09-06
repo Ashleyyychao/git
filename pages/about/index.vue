@@ -1,3 +1,3 @@
 <template>
-<div class='container'>123</div>
+<div class='container' style='max-width:1170px'>123</div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class='container'>
+    <div class='container' style='max-width:1170px'>
         <div class='text-center'>
             <div><v-img :src='require("~/assets/img/product1515378669651533.jpg")'></v-img></div>
             <div>鑄鐵塗模劑

@@ -10,10 +10,10 @@
 
 <script>
 import uiFunctions from "~/mixins/uiFunctions";
-import navDrawer from "~/components/layout/navDrawer";
-import infoNav from "~/components/layout/infoNav";
-import bottomFooter from "~/components/layout/bottomFooter";
-import copyright from "~/components/layout/copyright";
+import navDrawer from "~/components/section/navDrawer";
+import infoNav from "~/components/section/infoNav";
+import bottomFooter from "~/components/section/bottomFooter";
+import copyright from "~/components/section/copyright";
 
 export default {
   components: { navDrawer, infoNav, bottomFooter,copyright },
