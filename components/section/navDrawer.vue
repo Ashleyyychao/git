@@ -1,12 +1,12 @@
 <template>
-  <div class="container" style='max-width:1170px' :style="`${windowWidth < 900 ? 'border-bottom:5px solid #ffc005' : ''}`">
+  <div class="container" style='max-width:1170px;padding:40px 0px' :style="`${windowWidth < 900 ? 'border-bottom:5px solid #ffc005' : ''}`">
    <div class="d-flex py-6">
       <div class="logo">
-        <v-img
+        <nuxt-link to="/"><v-img
           width="356px"
           height="53px"
           :src="require('~/assets/img/logo.png')"
-        ></v-img>
+        ></v-img></nuxt-link>
       </div>
       <v-spacer></v-spacer>
       <div class='d-flex align-center' v-if="windowWidth > 900">

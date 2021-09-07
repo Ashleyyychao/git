@@ -1,7 +1,7 @@
 <template>
-  <div class="container" style="max-width: 1170px">
-    <nav role="navigation" class="d-flex" style='width:100%'>
-      <div class="dropdown" style='width:20%'>
+  <div class="container" style="max-width: 1170px;padding:0px">
+    <nav role="navigation" class="d-flex" style='width:100%;'>
+      <div class="dropdown" style='width:20%;'>
         <button class="dropbtn" style='width:100%'>關於我們</button>
         <div class="dropdown-content" style='width:100%'>
           <nuxt-link to="/about">公司簡介</nuxt-link>
@@ -11,28 +11,28 @@
       </div>
       <div class="dropdown"  style='width:20%'>
         <button class="dropbtn" style='width:100%'>最新消息</button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" style='width:100%'>
         <nuxt-link to="/news">公司簡介</nuxt-link>
           <nuxt-link to="/news/newproduct">代理品牌</nuxt-link>
         </div>
       </div>
       <div class="dropdown"  style='width:20%'>
         <button class="dropbtn" style='width:100%'>產品介紹</button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" style='width:100%'>
           <a href="/product">塗膜劑</a>
         
         </div>
       </div>
       <div class="dropdown"  style='width:20%'>
         <button class="dropbtn" style='width:100%'>創新技術</button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" style='width:100%'>
          <nuxt-link to="/technology">公司簡介</nuxt-link>
           <nuxt-link to="/technology/customized">代理品牌</nuxt-link>
         </div>
       </div>
       <div class="dropdown"  style='width:20%'>
         <button class="dropbtn" style='width:100%'>聯絡我們</button>
-        <div class="dropdown-content">
+        <div class="dropdown-content" style='width:100%'>
            <nuxt-link to="/contact">公司簡介</nuxt-link>
           <nuxt-link to="/contact/agent">代理品牌</nuxt-link>
         </div>

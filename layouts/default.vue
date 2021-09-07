@@ -2,6 +2,7 @@
   <v-app v-resize="Onresize" v-scroll="onScroll">
     <navDrawer></navDrawer>
     <infoNav></infoNav>
+    <breadCrumbs></breadCrumbs>
     <nuxt></nuxt>
     <bottomFooter></bottomFooter>
     <copyright></copyright>
@@ -14,9 +15,10 @@ import navDrawer from "~/components/section/navDrawer";
 import infoNav from "~/components/section/infoNav";
 import bottomFooter from "~/components/section/bottomFooter";
 import copyright from "~/components/section/copyright";
+import breadCrumbs from "~/components/section/breadCrumbs";
 
 export default {
-  components: { navDrawer, infoNav, bottomFooter,copyright },
+  components: { navDrawer, infoNav, bottomFooter,copyright,breadCrumbs },
   mixins: [uiFunctions],
   mounted() {
     this.checkWindowsW();
