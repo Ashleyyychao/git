@@ -72,6 +72,12 @@
   </div>
 </template>
 <script>
+
+export default {
+  name: "AboutUs",
+  middleware: 'metaTitle',
+  meta: {title: '公司簡介',redirect: '/about/index'},
+}
 </script>
 <style scoped>
 .banner {

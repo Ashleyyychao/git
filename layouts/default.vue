@@ -1,7 +1,9 @@
 <template>
   <v-app v-resize="Onresize" v-scroll="onScroll">
     <navDrawer></navDrawer>
-    <infoNav></infoNav>
+    <infoNav v-if="windowWidth > 1025"></infoNav>
+    <!-- <mobileNav v-if="$store.state.menubar"></mobileNav> -->
+    <mobileNav v-if='Mnav'></mobileNav>
     <breadCrumbs></breadCrumbs>
     <nuxt></nuxt>
     <bottomFooter></bottomFooter>
@@ -16,10 +18,28 @@ import infoNav from "~/components/section/infoNav";
 import bottomFooter from "~/components/section/bottomFooter";
 import copyright from "~/components/section/copyright";
 import breadCrumbs from "~/components/section/breadCrumbs";
+import mobileNav from "~/components/section/mobileNav";
 
 export default {
-  components: { navDrawer, infoNav, bottomFooter,copyright,breadCrumbs },
+  components: {
+    navDrawer,
+    infoNav,
+    bottomFooter,
+    copyright,
+    breadCrumbs,
+    mobileNav,
+  },
   mixins: [uiFunctions],
+  data() {
+    return {
+      Mnav:false
+    };
+  },
+  computed: {
+    // menubar () {
+    //   return $store.state.menubar
+    //   }
+  },
   mounted() {
     this.checkWindowsW();
   },

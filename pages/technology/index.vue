@@ -14,7 +14,7 @@
               >mdi-chevron-down</v-icon
             >
           </div>
-          <div class="text-center" style="font-size: 26px; font-weight: bold">
+          <div class="text-center pt-3" style="font-size: 26px; font-weight: bold;font-family:source-han-serif-tc;letter-spacing: 10px;">
             嚴選原料
           </div>
         </div>
@@ -60,7 +60,7 @@
               >mdi-chevron-down</v-icon
             >
           </div>
-          <div class="text-center" style="font-size: 26px; font-weight: bold">
+          <div class="text-center pt-3" style="font-size: 26px; font-weight: bold;font-family:source-han-serif-tc;letter-spacing: 10px;">
             混料製程
           </div>
         </div>
@@ -106,7 +106,7 @@
               >mdi-chevron-down</v-icon
             >
           </div>
-          <div class="text-center" style="font-size: 26px; font-weight: bold">
+          <div class="text-center pt-3" style="font-size: 26px; font-weight: boldf;ont-family:source-han-serif-tc;letter-spacing: 10px;">
             包裝品檢
           </div>
         </div>

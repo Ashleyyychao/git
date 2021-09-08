@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container" style="max-width: 1170px">
+  <div >
+    <div class="container" style="max-width: 1170px;padding:50px 0px">
       <div class="pa-10">
         <div
           class="text-center"
@@ -38,7 +38,7 @@
       </div>
     </div>
     <v-divider></v-divider>
-    <div class="container" style="max-width: 1170px">
+    <div class="container" style="max-width: 1170px;padding:50px 0px">
       <div class="pa-10">
         <div
           class="text-center"
@@ -82,7 +82,7 @@
       </div>
     </div>
     <v-divider></v-divider>
-     <div class="container" style="max-width: 1170px">
+     <div class="container" style="max-width: 1170px;padding:50px 0px 150px">
       <div class="pa-10">
         <div
           class="text-center"
@@ -120,6 +120,8 @@
 import uiFunctions from "~/mixins/uiFunctions";
 export default {
   mixins: [uiFunctions],
+  middleware: 'metaTitle',
+  meta: {title: '產品應用產業',redirect: '/about/application'},
   data() {
     return {
       data: [

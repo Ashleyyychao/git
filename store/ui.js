@@ -3,7 +3,8 @@ export const state = () => ({
     isMobileW: true,
     isScrolledDown: false,
     isNavDrawer: false,
-    windowWidth: 760
+    windowWidth: 760,
+    menubar:false
 })
 
 export const getters = {
@@ -11,6 +12,7 @@ export const getters = {
     isScrolledDown: state => { return state.isScrolledDown },
     isNavDrawer: state => { return state.isNavDrawer },
     windowWidth: state => { return state.windowWidth },
+    menubar: state => { return state.menubar },
 }
 
 export const mutations = {
@@ -25,6 +27,9 @@ export const mutations = {
     },
     setWindowWidth(state, value) {
         state.windowWidth = value;
+    },
+    menubartoggle(state) {
+        return state.menubar = !state.menubar 
     },
 }
 

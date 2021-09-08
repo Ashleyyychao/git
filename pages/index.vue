@@ -4,26 +4,11 @@
       <div class="banner">
         <div>
           <div
-            style="
-              font-size: 50px;
-              color: #fff;
-              font-family: 'source-han-serif-tc';
-              letter-spacing: 25px;
-              padding:70px
-              font-weight: 600;
-            "
-          >
+            style="font-size: 50px;color: #fff;font-family: 'source-han-serif-tc';letter-spacing: 25px; padding:86px;font-weight: 600;">
             六十年<br />
             鑄造塗模劑專家，<br />
-            台灣領導品牌<br /><sapn
-              style="
-                color: #ffc005;
-                font-weight: bold;
-                letter-spacing: 10px;
-                font-size: 25px;
-                line-height: 35px;
-              "
-              >勇赴熔焰，成就完美</sapn
+            台灣領導品牌<br /><span
+              style="color: #ffc005;font-weight: bold;letter-spacing: 10px;font-size: 25px;line-height: 35px;">勇赴熔焰，成就完美</span
             >
           </div>
         </div>

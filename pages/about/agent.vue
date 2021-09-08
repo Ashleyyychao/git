@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex flex-column" style="padding: 100px;max-width:1170px">
+  <div class="container d-flex flex-column" style="max-width:1170px" :style="`${windowWidth < 900 ? 'padding: 24px' : 'padding: 100px'}`">
     <div class="d-flex"  :class="`${windowWidth < 900 ? 'flex-column' : ''}`" style="margin: auto; padding-bottom: 100px;width:100%">
       <div  :style="`${windowWidth < 900 ? '' : 'padding-right: 100px;width:40%'}`" >
         <div>
@@ -154,6 +154,8 @@ import uiFunctions from "~/mixins/uiFunctions";
 
 export default {
     mixins: [uiFunctions],
+     middleware: 'metaTitle',
+  meta: {title: '代理品牌',redirect: '/about/agent'},
 
 }
 </script>
